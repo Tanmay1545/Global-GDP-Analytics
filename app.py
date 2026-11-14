@@ -94,19 +94,17 @@ hr {
 # 3. LOAD DATA FROM POSTGRESQL
 
 @st.cache_resource
+@st.cache_resource
 def get_engine():
-    config = st.secrets["postgres"]
+    database_url = st.secrets["postgres"]["url"]
 
-    url = URL.create(
-        "postgresql+psycopg",
-        username=config["username"],
-        password=config["password"],
-        host=config["host"],
-        port=config["port"],
-        database=config["database"]
+    database_url = database_url.replace(
+        "postgresql://",
+        "postgresql+psycopg://",
+        1
     )
 
-    return create_engine(url)
+    return create_engine(database_url)
 
 
 @st.cache_data
