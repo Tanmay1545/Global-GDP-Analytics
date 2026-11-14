@@ -1,6 +1,10 @@
 # 🌍 Global GDP Analytics Dashboard
 
-An interactive data analytics project that explores global economic performance using World Bank GDP data. The dashboard enables users to compare countries, analyse historical GDP trends, explore global GDP distribution, and examine annual economic growth.
+🚀 **Live Demo:** [Open Dashboard](https://global-gdp-analytics-7b2wdkvmrfdcxcnrgug9aq.streamlit.app/)
+
+💻 **GitHub Repository:** https://github.com/Tanmay1545/Global-GDP-Analytics
+
+An interactive global economic analytics dashboard built using Python, PostgreSQL, SQL, Pandas, Plotly and Streamlit.
 
 ## 🚀 Project Overview
 
